@@ -1,0 +1,31 @@
+LOGO FIX — EXACT UPLOAD STEPS
+
+This package fixes the missing logo section by adding:
+1. app/page.tsx — imports and displays LogoSection
+2. components/LogoSection.tsx — the logo section component
+3. public/logos/vp-brothers.webp
+4. public/logos/surya-footwear.webp
+
+HOW TO UPLOAD:
+1. Extract this ZIP.
+2. Open the SAME GitHub repository connected to Vercel:
+   Nirmitsinh_portfolio_45
+3. Click Add file > Upload files.
+4. Drag all three folders from this extracted package:
+   app
+   components
+   public
+5. GitHub may say app/page.tsx already exists. That is correct; upload it to replace the old version.
+6. Select "Commit directly to the main branch".
+7. Click Commit changes.
+8. Open Vercel > Deployments.
+9. Wait for the newest deployment to show Ready + Production.
+10. Open the production URL and press Ctrl + F5.
+
+IMPORTANT:
+- Upload the extracted folders, not this ZIP file.
+- The app/page.tsx file must contain <LogoSection />.
+- The repository must show:
+  components/LogoSection.tsx
+  public/logos/vp-brothers.webp
+  public/logos/surya-footwear.webp
