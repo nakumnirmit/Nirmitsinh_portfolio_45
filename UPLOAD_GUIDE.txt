@@ -1,0 +1,18 @@
+VP Brothers + Surya Footwear Logo Update
+
+1. Extract this ZIP.
+2. Open your GitHub repository.
+3. Click Add file > Upload files.
+4. Upload BOTH folders from this extracted package:
+   - components
+   - public
+5. Keep "Commit directly to the main branch" selected.
+6. Click Commit changes.
+7. Vercel will redeploy automatically.
+
+Files included:
+- components/LogoSection.tsx
+- public/logos/vp-brothers.webp
+- public/logos/surya-footwear.webp
+
+This update replaces the old LogoSection file and adds both actual logo images.
