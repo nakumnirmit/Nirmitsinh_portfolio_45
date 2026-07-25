@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-archivo: "Archivo Black", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-jbmono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #14111f;
+  color: #f5f1ff;
+  font-family: var(--font-manrope);
+}
+
+::selection {
+  background-color: #ff4d8d;
+  color: #14111f;
+}
+
+/* visible keyboard focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #ffd23f;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px #f5f1ff;
+  color: transparent;
+}
