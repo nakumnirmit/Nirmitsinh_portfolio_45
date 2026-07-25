@@ -33,7 +33,7 @@ Cards currently use gradient placeholders. To use real screenshots/thumbnails:
    ```tsx
    import Image from "next/image";
    <Image src="/work/post-1.jpg" alt={item.title} fill className="object-cover" />
-   ```
+   
 
 ## Deploying
 
