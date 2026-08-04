@@ -1,41 +1,62 @@
-# Nirmitsinh — Portfolio
+# Search Savaari Portfolio Project
 
-A bold, social-native portfolio built with Next.js 14 (App Router) + Tailwind CSS.
-Work samples are shown in "format-native" shapes: posts as a feed grid, reels as
-vertical phone cards, and articles/blogs as a readable list — with a live filter.
+This folder is ready for a **Next.js App Router** portfolio.
 
-## Getting started
+## Add it to your repository
 
-```bash
-npm install
-npm run dev
+Copy these folders into the root of your project:
+
+```text
+app/
+public/
+snippets/
 ```
 
-Then open http://localhost:3000.
+The project page will be available at:
 
-## Where to edit things
+```text
+/projects/search-savaari
+```
 
-- **Name, tagline, bio** → `components/Hero.tsx`
-- **Work samples** → `components/WorkShowcase.tsx`, edit the `items` array:
-  ```ts
-  { id: "p1", type: "post", title: "Launch day carousel", client: "Client Name", stat: "12.4K likes" }
-  ```
-  `type` can be `"post"`, `"reel"`, `"article"`, or `"blog"`.
-- **Email / social links** → `components/Footer.tsx`
-- **Colors / fonts** → `tailwind.config.ts`
+## Add the card to your portfolio home page
 
-## Adding real images
+Open:
 
-Cards currently use gradient placeholders. To use real screenshots/thumbnails:
-1. Drop images into a `public/work/` folder.
-2. In `WorkShowcase.tsx`, replace the placeholder `<div>` inside each card
-   (`PostCard`, `ReelCard`) with `next/image`, e.g.
-   ```tsx
-   import Image from "next/image";
-   <Image src="/work/post-1.jpg" alt={item.title} fill className="object-cover" />
-   ```
+```text
+snippets/project-entry.js
+```
 
-## Deploying
+Copy the `searchSavaariProject` object into the array that currently stores your portfolio projects.
 
-The easiest option is [Vercel](https://vercel.com/new) — connect the repo and it
-deploys automatically. Any Node hosting that supports Next.js also works.
+## Important route adjustments
+
+The page currently uses:
+
+```jsx
+<Link href="/">Back to portfolio</Link>
+<Link href="/contact">Start a project</Link>
+```
+
+Change these two links if your portfolio or contact routes are different.
+
+## Fonts
+
+The page uses your website's existing font, so no new font package is required.
+
+## Images
+
+All nine creatives are already renamed, compressed to WebP and stored in:
+
+```text
+public/portfolio/search-savaari/
+```
+
+## If your website uses the Pages Router
+
+Move the JSX page to:
+
+```text
+pages/projects/search-savaari.jsx
+```
+
+Then change the CSS import path as needed. The `metadata` export is only for the App Router and can be removed in the Pages Router.
